@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="">
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <title>Shuffled</title>
+  </head>
+  <body>
+    <!-- <form action=""> -->
+    <label for="Tname">TITLE</label>
+    <input type="text" id="Tname" name="Tname" /><br /><br />
 
-        <label for="Tname">TITLE</label>
-        <input type="text" id="Tname" name="Tname"><br><br>
-
-        <label for="peopleNo">Number</label>
-        <input type="number" id="peopleno" min="1" max="6" name="peopleno">
-
-        <button type="submit">Submit</button>
+    <label for="peopleNo">Number</label>
+    <input type="number" id="peopleNo" min="1" max="6" name="peopleNo" />
 
     <!-- RESULTS TO BE DISPLAYED HERE!! -->
-        <span id="spanResult">
-        </span> 
+    <span id="spanResult"> </span>
 
-        <button type="reset">Reset</button>
-    </form>
-
-
-    
-
-</body>
+    <input type="button" value="Enter" id="enter" />
+    <button id="sub_btn" type="submit" hidden>Submit</button>
+    <button id="reset_btn" type="reset">Reset</button>
+    <!-- </form> -->
+  </body>
 </html>
