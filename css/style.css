@@ -1,0 +1,31 @@
+
+body {
+    
+    padding: 1em;
+    flex-flow: row nowrap;
+    border: 2px black;
+    
+}
+label {
+	display: block;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    
+}
+button {
+    color: aliceblue;
+    background-color: rgb(48, 2, 2);
+    padding: 5px;
+}
+.enter {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(48, 2, 2);
+    bac
+}
+input{
+    margin: 5px;
+    padding: 5px;
+}
