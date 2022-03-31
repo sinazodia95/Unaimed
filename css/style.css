@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(134, 194, 194);
+}
+.unaimed{
+    margin: 0;
+    padding-top: 6rem;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(77, 0, 128);
+}
