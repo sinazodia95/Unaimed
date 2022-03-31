@@ -1,4 +1,9 @@
+h1 {
+    color: gray;
+    margin-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
 body {
     
     padding: 1em;
