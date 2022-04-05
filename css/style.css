@@ -1,3 +1,4 @@
+
 h1 {
     color: gray;
     margin-right: 10px;
@@ -9,7 +10,7 @@ body {
     padding: 1em;
     flex-flow: row nowrap;
     border: 2px black;
-    
+    background-color: rgb(134, 194, 194);
 }
 label {
 	display: block;
@@ -33,4 +34,12 @@ button {
 input{
     margin: 5px;
     padding: 5px;
+
+.unaimed{
+    margin: 0;
+    padding-top: 6rem;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(77, 0, 128);
 }
+
