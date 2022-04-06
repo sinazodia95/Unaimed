@@ -1,11 +1,13 @@
 
-h1 {
+h1
+ {
     color: gray;
     margin-right: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-body {
+body
+ {
     
     padding: 1em;
     flex-flow: row nowrap;
@@ -29,17 +31,23 @@ button {
     padding: 5px;
     color: white;
     background-color: rgb(48, 2, 2);
-    bac
+    /* bac */
 }
-input{
+
+input
+{
     margin: 5px;
     padding: 5px;
+}
 
-.unaimed{
+.unaimed
+{
     margin: 0;
     padding-top: 6rem;
     text-align:center;
     font-family:'Times New Roman', Times, serif;
     color: rgb(77, 0, 128);
 }
+
+
 
