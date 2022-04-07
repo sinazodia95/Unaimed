@@ -3,7 +3,7 @@ const parentNode = document.getElementById("spanResult");
 const Subm_btn = document.getElementById("sub_btn");
 const reset_btn = document.getElementById("reset_btn");
 const number = document.getElementById("peopleNo");
-
+const title=document.getElementById("Tname");
 /************************************************
  *
  */
@@ -13,11 +13,13 @@ function GeneratorCollector() {
 
   for (let i = 0; i < parseInt(number.value); i++) {
     let inputTag = document.createElement("input");
+  
     names.push(inputTag);
   }
 
   names.forEach((name) => {
     parentNode.appendChild(name);
+  
     myNames.push(name);
   });
 }
@@ -29,6 +31,7 @@ function CollectNames() {
   enter.onclick = function () {
     if (myNames.length === 0 && number.value != 0) {
       GeneratorCollector();
+     
       enter.hidden = true;
       Subm_btn.hidden = false;
     }
@@ -53,6 +56,14 @@ function reset() {
   enter.hidden = false;
 }
 
-function getWinner() {
+function getWinner() 
+
+{
   //display winner
+  // alert(myNames.indexOf[Math.floor(Math.random() * myNames.length)]);
+  //  alert(title.value)
+   alert("The winner of "+title.value+" is: "+myNames[Math.floor(Math.random() * myNames.length)].value);
+
 }
+
+
