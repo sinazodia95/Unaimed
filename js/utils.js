@@ -3,7 +3,8 @@ const parentNode = document.getElementById("spanResult");
 const Subm_btn = document.getElementById("sub_btn");
 const reset_btn = document.getElementById("reset_btn");
 const number = document.getElementById("peopleNo");
-
+const resultDiv=document.getElementById('results');
+const titleName=document.getElementById('Tname');
 /************************************************
  *
  */
@@ -49,10 +50,53 @@ function reset() {
 
     number.value = 0;
     myNames.length = 0;
+   resultDiv.removeChild(resultDiv.firstChild);
   }
   enter.hidden = false;
 }
 
-function getWinner() {
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
   //display winner
 }
+
+function getWinner(){
+  let index=getRandom(parseInt(number.min),parseInt(number.value));
+  let Winner=myNames[index].value;
+  return Winner;
+
+}
+
+// ...............................
+CollectNames();
+
+
+
+
+Subm_btn.onclick = function () {
+
+  let fName=getWinner();
+  //  console.log(fName);
+  let par = document.createElement("p");
+  
+  let textToAdd=document.createTextNode(` The Winner of the ${titleName.value} is ${fName} `);
+  par.appendChild(textToAdd);
+  resultDiv.appendChild(par);
+
+  // reset();
+  reset_btn.hidden = false;
+  Subm_btn.hidden = true;
+  // reset();
+};
+
+reset_btn.onclick = function () {
+  reset();
+  // console.log("Hello");
+};
+
+// let form = document.getElementsByTagName("form")[0];
+
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   sendData();
+// });

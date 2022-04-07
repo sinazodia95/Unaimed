@@ -1,16 +1,21 @@
-CollectNames();
+// CollectNames();
 
-Subm_btn.onclick = function () {
-  getWinner();
-  // reset();
-  reset_btn.hidden = false;
-  Subm_btn.hidden = true;
-  // reset();
-};
-reset_btn.onclick = function () {
-  reset();
-  // console.log("Hello");
-};
+
+
+
+// Subm_btn.onclick = function () {
+
+//   let fName=getWinner();
+//    console.log(fName);
+//   // reset();
+//   reset_btn.hidden = false;
+//   Subm_btn.hidden = true;
+//   // reset();
+// };
+// reset_btn.onclick = function () {
+//   reset();
+//   // console.log("Hello");
+// };
 
 // let form = document.getElementsByTagName("form")[0];
 
