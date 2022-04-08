@@ -3,7 +3,8 @@ const parentNode = document.getElementById("spanResult");
 const Subm_btn = document.getElementById("sub_btn");
 const reset_btn = document.getElementById("reset_btn");
 const number = document.getElementById("peopleNo");
-
+const resultDiv = document.getElementById("results");
+const titleName = document.getElementById("Tname");
 /************************************************
  *
  */
@@ -23,16 +24,14 @@ function GeneratorCollector() {
 }
 
 /*********************************************************
- * Captures user inputs when the enter button is pressed
+ * Captures user inputs
  */
 function CollectNames() {
-  enter.onclick = function () {
-    if (myNames.length === 0 && number.value != 0) {
-      GeneratorCollector();
-      enter.hidden = true;
-      Subm_btn.hidden = false;
-    }
-  };
+  if (myNames.length === 0 && number.value != 0) {
+    GeneratorCollector();
+    enter.hidden = true;
+    Subm_btn.hidden = false;
+  }
 }
 
 /************************************************************
@@ -49,10 +48,19 @@ function reset() {
 
     number.value = 0;
     myNames.length = 0;
+    resultDiv.removeChild(resultDiv.firstChild);
+    titleName.value = "";
   }
   enter.hidden = false;
 }
 
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function getWinner() {
-  //display winner
+  let seed = getRandom(parseInt(number.min), parseInt(number.value));
+  let index = seed - 1;
+  let Winner = myNames[index].value;
+  return Winner;
 }
