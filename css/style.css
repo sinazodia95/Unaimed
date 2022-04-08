@@ -58,8 +58,12 @@ p {
   font-weight: 800;
 }
 
-.Result
+/* .Result
 {
- 
-  margin-left: 20rem;
+  margin-left: 10rem;
+} */
+
+#results
+{
+  margin-right: 20rem;
 }
