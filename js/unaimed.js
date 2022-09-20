@@ -88,3 +88,39 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
 	social_panel_container.classList.remove('visible')
 });
+/************************************************************
+ * Reset the screen elements
+ */
+ function reset() {
+	if (myNames.length != 0) {
+	  let i = 0;
+	  do {
+		let child = parentNode.lastChild;
+		parentNode.removeChild(child);
+		i++;
+	  } while (i < parseInt(number.value));
+  
+	  number.value = 0;
+	  myNames.length = 0;
+	  resultDiv.removeChild(resultDiv.firstChild);
+	  titleName.value = "";
+	}
+	enter.hidden = false;
+  }
+  
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+	if (!e.target.matches('.dropbtn')) {
+	var myDropdown = document.getElementById("myDropdown");
+	  if (myDropdown.classList.contains('show')) {
+		myDropdown.classList.remove('show');
+	  }
+	}
+  }
+  

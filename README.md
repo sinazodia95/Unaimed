@@ -11,4 +11,4 @@ Web Application where there is a **collection of data** from **user inputs** and
 6. then reset errything.
 
 
----I Sinazo I have made a few changes, te random name are entered in one input field and you enter the name and separate it by comma to enter the next input and press enter to start the random search
+---I Sinazo I have made a few changes, te random name are entered in one input field and you enter the name and separate it by comma to enter the next input and press enter to start the random see the files

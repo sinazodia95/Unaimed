@@ -12,10 +12,18 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-      
-    </header>
     <form action="">
+        <h1>UNAIMED</h1>
+        <label for="Tname">TITLE</label>
+        <select id="abtype">
+            <option selected>Select One</option>
+            <option value="tour" > The Scrum</option>
+            <option value="dinner">Stockvel Winner</option>
+            <option value="dance">Best Singer</option>
+            <option value="whales">Most Likely to Laugh</option>
+            
+        </select>
+            
         <div class="container">
             <h3>
                 Enter all of the choices divided by a comma (','). <br/>
@@ -30,10 +38,12 @@
 
 
         <input type="reset" value="Reset">
+        <div id="results"></div>
     </form>
 
 
     <script src="./js/unaimed.js"></script>
+    <script src="./utilsss.js"></script>
 
 </body>
 </html>
